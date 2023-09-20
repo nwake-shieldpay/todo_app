@@ -22,7 +22,7 @@ jobs:
       - name: Spinning up environment
         working-directory: ./src/webapp
         run: |
-          npm install
+          echo "Hello, again!"
           npm run start-server
       - name: Setup and run UI tests
         working-directory: ./e2e
