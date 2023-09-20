@@ -29,8 +29,8 @@ jobs:
         working-directory: ./src/webapp
         run: |
           echo "Hello, again!"
-          npm i http-server
           npm install
+          npm i http-server
           npm run start-server
       - name: Setup and run UI tests
         working-directory: ./e2e
