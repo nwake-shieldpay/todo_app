@@ -19,6 +19,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - name: Spinning up environment
+        working-directory: ./src/webapp
+        run: |
+          npm install
+          npm run start-server
       - name: Setup and run UI tests
         working-directory: ./e2e
         run: |
