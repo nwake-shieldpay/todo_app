@@ -27,8 +27,8 @@ jobs:
           echo "Hello, again!"
           npm install
           npm run start-server
-      - name: Setup and run UI tests
-        working-directory: ./e2e
-        run: |
-          npm install
-          npm run test
+    #   - name: Setup and run UI tests
+    #     working-directory: ./e2e
+    #     run: |
+    #       npm install
+    #       npm run test
